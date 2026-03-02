@@ -1,0 +1,24 @@
+# 🏛️ Chronos Archive: Sistema de Gestión de Patrimonio Histórico
+
+**Chronos Archive** es una aplicación Full-Stack diseñada para la digitalización y gestión de archivos históricos. Este proyecto permite a administradores e investigadores gestionar registros de figuras históricas y usuarios del sistema mediante una arquitectura moderna basada en React y Express.
+
+## 🚀 Características Técnicas
+
+- **Frontend:** React con arquitectura de componentes funcionales y Hooks personalizados (`useToken`).
+- **Autenticación:** Sistema basado en **JWT (JSON Web Tokens)** para sesiones seguras y persistencia de estado.
+- **Backend:** Node.js con Express, integrando **Bcrypt** para el cifrado de contraseñas.
+- **Base de Datos:** Repositorios desacoplados para gestión de usuarios, profesores (investigadores) y estudiantes (registros históricos).
+- **Diseño:** Interfaz de usuario inspirada en archivos nacionales con un diseño limpio, profesional y "responsive" mediante CSS3.
+
+## 🛠️ Funcionalidades Extra Implementadas
+
+- ✅ **Gestión de Roles:** Diferenciación de permisos entre Administradores (acceso total) e Investigadores.
+- ✅ **Operaciones CRUD:** Alta y baja de investigadores y registros históricos desde el panel de control.
+- ✅ **Seguridad:** Rutas protegidas y limpieza de tokens al cerrar sesión para prevenir accesos no autorizados.
+- ✅ **UX/UI:** Sidebar interactivo con estados activos y diseño profesional de tablas.
+
+## 📦 Instalación y Uso
+
+1. Clona el repositorio:
+   ```bash
+   git clone [https://github.com/tu-usuario/chronos-archive.git](https://github.com/tu-usuario/chronos-archive.git)

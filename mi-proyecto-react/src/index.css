@@ -1,0 +1,112 @@
+/* --- RESET GENERAL --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f9;
+}
+
+/* --- ESTRUCTURA DEL LAYOUT --- */
+#root {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* --- SIDEBAR (Tu nav id="sidebar") --- */
+#sidebar {
+  width: 280px;
+  background-color: #1a2a3a; /* Azul Oxford */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 0 10px rgba(0,0,0,0.1);
+  padding: 0;
+}
+
+/* Título 🏛️ Chronos Archive */
+#sidebar h1 {
+  font-size: 1.4rem;
+  padding: 30px 20px;
+  text-align: center;
+  color: #c5a059; /* Dorado */
+  letter-spacing: 2px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  margin-bottom: 20px;
+}
+
+/* Lista de navegación */
+#sidebar nav ul {
+  list-style: none;
+  flex-grow: 1;
+}
+
+#sidebar nav li {
+  margin: 5px 0;
+}
+
+/* Los enlaces NavLink */
+#sidebar nav a {
+  display: block;
+  padding: 15px 25px;
+  color: #a0aec0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent;
+}
+
+/* Efecto al pasar el ratón */
+#sidebar nav a:hover {
+  background-color: rgba(255,255,255,0.05);
+  color: white;
+  padding-left: 35px;
+}
+
+/* Clase que React pone automáticamente al estar en esa página */
+#sidebar nav a.active {
+  background-color: rgba(197, 160, 89, 0.15);
+  color: #c5a059;
+  border-left: 4px solid #c5a059;
+}
+
+/* --- BOTÓN SALIR --- */
+.btn-logout {
+  background-color: #e53e3e;
+  color: white !important;
+  border: none;
+  padding: 12px;
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.btn-logout:hover {
+  background-color: #c53030;
+  transform: translateY(-2px);
+}
+
+/* --- CONTENIDO PRINCIPAL --- */
+#detail {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
+  background-color: #f8fafc;
+}
+
+/* Contenedor blanco para las tablas y formularios */
+.container, .page-content {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
