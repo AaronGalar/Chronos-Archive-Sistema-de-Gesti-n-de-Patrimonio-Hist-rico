@@ -1,0 +1,27 @@
+{{> header}}
+
+<h1>Panel de Administración</h1>
+<p>Gestionando como: {{adminEmail}}</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Email</th>
+            <th>Tipo</th>
+            <th>Estado</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#listaUsuarios}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{email}}</td>
+            <td>{{type}}</td>
+            <td>{{#active}}✅ Activo{{/active}}{{^active}}❌ Inactivo{{/active}}</td>
+        </tr>
+        {{/listaUsuarios}}
+    </tbody>
+</table>
+
+{{> footer}}

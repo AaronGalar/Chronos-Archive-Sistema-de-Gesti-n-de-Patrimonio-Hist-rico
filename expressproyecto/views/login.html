@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Login</title><style>body{display:flex;justify-content:center;align-items:center;height:100vh;background:#f0f2f5;font-family:sans-serif;}</style></head>
+<body>
+    <form action="/login" method="POST" style="background:white;padding:30px;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.1);">
+        <h2>Iniciar Sesión</h2>
+        <div style="margin-bottom:15px">
+            <label>Email:</label><br>
+            <input type="email" name="username" required style="width:100%;padding:8px">
+        </div>
+        <div style="margin-bottom:15px">
+            <label>Password:</label><br>
+            <input type="password" name="password" required style="width:100%;padding:8px">
+        </div>
+        <button type="submit" style="width:100%;padding:10px;background:#3498db;color:white;border:none;border-radius:4px;cursor:pointer">Entrar</button>
+    </form>
+</body>
+</html>
